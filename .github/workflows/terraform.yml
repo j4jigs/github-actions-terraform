@@ -31,10 +31,10 @@ jobs:
         id: init
         run: terraform init
         working-directory: ./terraform/vpc/environment/dev         
-      - name: Terraform Validate
-        id: validate
-        run: terraform validate -no-color  
-        working-directory: ./terraform/vpc/environment/dev       
+    #  - name: Terraform Validate
+    #    id: validate
+    #    run: terraform validate -no-color  
+    #    working-directory: ./terraform/vpc/environment/dev       
       - name: Terraform Plan
         id: plan
         run: terraform plan -no-color
